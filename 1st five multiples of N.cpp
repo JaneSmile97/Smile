@@ -2,15 +2,15 @@
 # include <conio.h>
 void main() 
 { 
- int i, n, d ; 
+ int i,num,div ; 
  clrscr() ; 
  printf("Enter the limit : ") ; 
- scanf("%d", &n) ; 
+ scanf("%d", &num) ; 
  printf("\nEnter the number : ") ; 
- scanf("%d", &d) ; 
- printf("\nThe numbers divisible by %d are :\n\n", d) ; 
- for(i = 1 ; i <= n ; i++) 
-  if(i % d == 0) 
+ scanf("%d", &div) ; 
+ printf("\nThe numbers divisible by %d are :\n\n", div) ; 
+ for(i = 1 ; i <= num ; i++) 
+  if(i % div == 0) 
    printf("%d\t", i) ; 
  getch() ; 
 }
