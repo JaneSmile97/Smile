@@ -8,7 +8,7 @@ int main()
 
     for(j=2; j<=number/2; ++j)
     {
-        // condition for nonprime number
+        
         if(number%j==0)
         {
             flag=1;
