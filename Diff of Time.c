@@ -11,12 +11,12 @@ int main()
 {
     struct TIME startTime, stopTime, diff;
 
-    printf("Enter start time: \n");
-    printf("Enter hours, minutes and seconds respectively: ");
+    printf("Time1: \n");
+    printf("Enter HH:MM:SS respectively: ");
     scanf("%d %d %d", &startTime.hours, &startTime.minutes, &startTime.seconds);
 
-    printf("Enter stop time: \n");
-    printf("Enter hours, minutes and seconds respectively: ");
+    printf("Time2: \n");
+    printf("Enter HH:MM:SS respectively: ");
     scanf("%d %d %d", &stopTime.hours, &stopTime.minutes, &stopTime.seconds);
 
     
