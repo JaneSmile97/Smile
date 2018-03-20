@@ -1,23 +1,24 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<stdbool.h>
+
+
+bool isPowerOfTwo(int n)
+{
+if (n == 0)
+	return 0;
+while (n != 1)
+{
+	if (n%2 != 0)
+		return 0;
+	n = n/2;
+}
+return 1;
+}
+
+
 int main()
 {
-    int base, exponent;
-
-    int res = 1;
-
-    printf("Enter a base number: ");
-    scanf("%d", &base);
-
-    printf("Enter an exponent: ");
-    scanf("%d", &exponent);
-
-    while (exponent != 0)
-    {
-        res *= base;
-        --exponent;
-    }
-
-    printf("Answer = %d", res);
-
-    return 0;
+isPowerOfTwo(31)? printf("Yes\n"): printf("No\n");
+isPowerOfTwo(64)? printf("Yes\n"): printf("No\n");
+return 0;
 }
